@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(242, 218, 247);
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+body > figure{
+    display: flex;
+    overflow: hidden;
+}
+
+body > figure > img{
+    max-width: 100%;
+}
+
+
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+li {
+    padding: .5em;
+    background-color: rgb(255, 187, 234);
+    margin: .5em;
+    border-radius: 0.5em;
+    list-style: none;
+    box-shadow: rgb(184, 181, 181) 0 0.1em 0.1em;
+    font-family: 'Lobster', cursive;
+ 
+}
+
+li:hover {
+    background-color: rgb(207, 142, 233);
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(114, 111, 111);
+    padding: 1.2em;
+}
+
+a:hover{
+    color: ivory;
+}
+
+/* JUEGO 1 LANZAR LA MONEDA */
+
+.titulo{
+    font-size: 2.5em;
+    color: rgb(203, 108, 231);
+    font-family: 'Lobster', cursive;
+}
+
+#wrapperGame1,#wrapperGame2 #wrapperGame3, #wrapperGame4, #wrapperGame5, #wrapperGame6, #wrapperGame7 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin: 1em 0;
+    align-items: center;
+    border-radius: .5em;
+    border: rgb(177, 137, 214) 3px dotted;
+
+}
+
+#counter {
+    background-color: rgb(240, 212, 252);
+    display: flex;
+    justify-content: center;
+    
+    margin: 2em;
+    border: solid rgb(241, 241, 241) 2px;
+    border-radius: .3em;
+    box-shadow: rgb(100, 100, 100) 0 0.1em 0.1em;
+    margin-bottom: 2em;
+
+}
+
+#counter section, #counterGame2 section {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    width: 100%;
+    
+}
+
+#counter p , h1 {
+    color: rgb(64, 194, 177);
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Lobster', cursive;
+   
+}
+
+#monedas {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 2em;
+    
+}
+
+#cajaCara, #cajaMoneda, #cajaCruz {
+    display: flex;
+    padding: 1em;
+    width: 20%;
+
+}
+
+#cajaCara , #cajaMoneda, #cajaCruz {
+    display: flex;
+    flex-flow: column nowrap;
+    flex:1;
+}
+
+#cajaCara>img, #cajaMoneda>img, #cajaCruz>img {
+    width: 100%
+    
+}
+
+#monedas input {
+   
+    padding: .6em;
+    background-color: azure;
+    border-radius: .5em;
+    color: rgb(119, 116, 116);
+    margin-top: .5em;
+    font-family: 'Lobster', cursive;
+}
+
+#monedas input:hover{
+    background-color: rgb(207, 142, 233);
+    color: honeydew;
+}
+
+/* JUEGO 2 PIEDRA, PAPEL O TIJERAS */
+
+
+#wrapperGame2{
+    background-color: rgb(251, 255, 255);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around; 
+    border-radius: .5em;
+    border: rgb(177, 137, 214) 3px dotted;
+    margin: .7em;
+}
+
+#wrapperGame2 > h1{
+    color: black;
+    font-size: 2em;
+    
+} 
+
+#counterGame2 section{
+    text-align: center;
+}
+
+#counterGame2 {
+    text-align: center;
+}
+
+#imagenesSeleccionadas{
+   display: flex;
+   justify-content: center;
+}
+
+#imagenesSeleccionadas > section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start , #calcular, #result ,#num, #num1, #num2 , #intercambioValor, #intercambioReferencia, #numeros, #resultadoSuma, #sumar, #info1, #info2, #info3, #calcularRecursivo{
+    margin: 1em;
+    padding: .6em;
+    background-color: azure;
+    border-radius: .5em;
+    color: rgb(119, 116, 116);
+    font-family: 'Lobster', cursive;
+    
+}
+
+#info{
+    width: 300px;
+}
+
+#wrapperGame2 input:hover{
+    background-color: rgb(207, 142, 233);
+    color: honeydew;
+}
+
+
+
+#opciones{
+    display: flex;
+    padding: 1em;
+  
+}
+
+#opciones  img {
+    width: 50%;
+   
+}
+
+#imagenesSeleccionadas img{
+    width: 50%;
+}
+
+.piedra, .papel, .tijeras {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Juego 3 Factorial */
+
+#calcular:hover, #intercambioValor:hover, #intercambioReferencia:hover, #sumar:hover, #info1:hover, #info2:hover, #info3:hover, #calcularRecursivo:hover{
+    background-color: rgb(207, 142, 233);
+    color: honeydew;
+}
+
+.intro{
+    margin: 1em;
+    font-family: 'Lobster', cursive;
+
+}
+
+#wrapperGame3{
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    text-align: center;
+    background-color: white;
+    border: rgb(177, 137, 214) 3px dotted;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="ej2.js"></script>
+    <title>Piedra, papel o tijeras</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="game1.html">Game 1</a></li>
+                <li><a href="game2.html">Game 2</a></li>
+                <li><a href="game3.html">Game 3</a></li>
+                <li><a href="game4.html">Game 4</a></li>
+                <li><a href="game5.html">Game 5</a></li>
+                <li><a href="game6.html">Game 6</a></li>
+               
+               
+            </ul>
+        
+        </nav>
+    </header>   
+    <h1 class="titulo">Juego de : Piedra, Papel o Tijeras</h1> 
+    <div id="wrapperGame2">
+
+       
+
+        <div id="counter">
+
+            <section class="jugador">
+                <h1>Jugador</h1>
+                <p id="contadorJugador2">0</p>
+            </section>
+    
+            <section class="partida">
+                <h1>Partidas</h1>
+                <p id="contadorPartida2">0</p>
+            </section>
+    
+            <section class="maquina">
+                <h1>Máquina</h1>
+                <p id ="contadorMaquina2">0</p>
+            </section>
+    
+        </div>
+
+        <div id='imagenesSeleccionadas'>
+
+                <section>
+                    <h1>Selección Jugador:</h1>
+                    <img src="" alt="" id="opcionJugador">
+                </section>
+
+                <h1> VS</h1>
+           
+                <section>
+                    <h1>Selección Máquina:</h1>
+                    <img src="" alt="" id="opcionMaquina">
+                </section>
+
+              
+        </div>
+
+        <input type="button" value="Start" id="start">
+
+        <div id="opciones">
+
+            <section class="piedra">
+                <h1>Piedra</h1>
+                <img src="/Img/piedra.png" alt="">
+                <input type="radio" name='opcion' value="piedra" id="piedra">
+            </section>
+
+            <section class="papel"> 
+                <h1>Papel</h1>
+                <img src="/Img/papel.png" alt="">
+                <input type="radio" name="opcion" value="papel" id="papel">
+            </section>
+
+            <section class="tijeras">
+                <h1>Tijeras</h1>
+                <img src="/Img/tijeras.png" alt="">
+                <input type="radio" name="opcion" value="tijeras" id="tijeras">
+            </section>
+            
+            
+        </div>
+
+
+
+
+
+    </div>
+
+
+    
+</body>
+</html>
